@@ -1,0 +1,221 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 2em;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Hero Section - For the homepage */
+.hero {
+    background: url('./images/hero.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+.destinations {
+    
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+.destination-card {
+
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.destination-card h3 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/* Package Section on Homepage */
+.packages {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.packages h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.package-card {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.package-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.package-card h3 {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+.package-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.package-card button:hover {
+    background-color: #555;
+}
+
+/* Package Detail Pages */
+.package-detail {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.package-detail h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.package-detail img {
+    width: 50%;
+    height: 500px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.package-detail p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.package-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package-detail ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.package-detail h3 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.package-detail button {
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.package-detail button:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .package-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .package-detail img {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .package-detail ul li {
+        font-size: 1.2em;
+    }
+
+    .package-detail h3 {
+        font-size: 1.8em;
+    }
+}

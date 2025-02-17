@@ -3,23 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Verification</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explore The World</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="icon">&#10004;</div>
-            <h2>Certificate has been verified.</h2>
-            <p class="first">The student's information has been successfully verified.</p>
-            <div class="info">
-                <p><strong>Name:</strong> Dedipyaman Pareek</p>
-                <p><strong>Email:</strong> dedipyamaan05@gmail.com</p>
-                <p><strong>Domain:</strong> Web Development</p>
-                <p><strong>Duration:</strong> 2 Months</p>
+    <header>
+        <div class="logo">Explore The World</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        
+        <h1>Discover New Places</h1>
+        <p>Find your next adventure with us!</p>
+
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="./images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The city of love and lights.</p>
             </div>
-            <button onclick="verifyCertificate()">Go to the Certification Verification</button>
+            <div class="destination-card">
+                <img src="./images/newyork.jpeg" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps.</p>
+            </div>
+            <div class="destination-card">
+                <img src="./images/tokyo.jpeg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>A perfect blend of tradition and technology.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <h2>Exclusive Travel Packages</h2>
+        <div class="package-card">
+            <img src="./images/beach.jpg" alt="Beach Package">
+            <h3>Beach Escape</h3>
+            <p>Enjoy a relaxing vacation on the beach.</p>
+            <a href="beach-escape.html">
+                <button>Learn More</button>
+            </a>
+        </div>
+        <div class="package-card">
+            <img src="./images/pexels-sagui-andrea-200115-618833.jpg" alt="Mountain Adventure">
+            <h3>Mountain Adventure</h3>
+            <p>Explore the breathtaking mountains.</p>
+            <a href="mountain-adventure.html">
+                <button>Learn More</button>
+            </a>
+        </div>
+    </section>
+   
+
+    <footer>
+        <p>&copy; 2025 ExploreTheWorld</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
